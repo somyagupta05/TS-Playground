@@ -16,3 +16,10 @@ console.log(myName);
 let sentence:String="i am good"
 let sentencelength:number=sentence.length;
 console.log(sentencelength)
+
+// 4. declare a variable sentence of type string and assign it a sentence of your choice. convert the entire sentence to uppercase and store the result in a variable called uppercasetext. then convert the entire sentence to lowercase and store the result in a variable called lowercasetext.
+let text:String="i am good";
+let uppercasetext:string=text.toUpperCase();
+let lowercasetext:string=text.toLowerCase();
+console.log(uppercasetext);
+console.log(lowercasetext);
