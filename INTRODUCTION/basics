@@ -1,0 +1,23 @@
+Types in Typescript---
+  undefined
+  void
+  any
+  null
+  number
+  bigint
+  boolean
+  string
+  symbol
+  object
+  number enum
+  never
+  string enum
+  unique symbol
+  array
+  tuple
+  function
+  constructor
+
+
+// @ats ignore 
+to ignore the next line written after this

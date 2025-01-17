@@ -16,4 +16,11 @@ function Sum(a:number,b:number):number
 }
 
 // fun call
+
+// type conversion 
 console.log(Sum(5,5));
+
+let myFavNum:number=10;
+let myFullName:string="somya gupta";
+
+console.log(myFavNum.toString())
