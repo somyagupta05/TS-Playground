@@ -17,3 +17,14 @@ let uppercasetext = text.toUpperCase();
 let lowercasetext = text.toLowerCase();
 console.log(uppercasetext);
 console.log(lowercasetext);
+// 5: Substring:
+let longText = "This is a long sentence.";
+let shortText = longText.substring(0, 10);
+// 6: String Comparison:
+let str1 = "Hello";
+let str2 = "World";
+let areEqual = str1 === str2;
+// 7: String Template:
+let product = "Phone";
+let price = 500;
+let messsage = `The product ${product} is priced at ${price} dollars.`;
