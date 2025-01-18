@@ -16,3 +16,5 @@ console.log(anotherbigNumber)
 
 var sum2=bignumber+anotherbigNumber
 console.log(sum2)
+var diff=bignumber-anotherbigNumber
+console.log(diff)
