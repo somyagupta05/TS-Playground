@@ -6,7 +6,8 @@
 
 // console.log(2**53)
 
-// const maxnumber=Number.MAX_SAFE_INTEGER
+const maxnumber=Number.MAX_SAFE_INTEGER
+console.log(maxnumber)
 
 var bignumber:bigint=9007199254740992n
 console.log(bignumber)
