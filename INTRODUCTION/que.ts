@@ -48,3 +48,16 @@ const ispalindrome=(palin:string):boolean=>{
   return myPlain===palin
 }
 console.log(ispalindrome("12321"))
+
+
+// interference
+  let mssg = "Hello, TypeScript!";
+console.log(mssg);
+// The compiler infers the type string.
+ function calculateArea(len: number, wid: number) {
+    return len * wid;
+}
+
+const result = calculateArea(10, 5);
+console.log(result);
+// The compiler infers the type number.
