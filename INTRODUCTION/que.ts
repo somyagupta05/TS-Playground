@@ -38,3 +38,13 @@ let areEqual: boolean = str1 === str2;
 let product: string = "Phone";
 let price: number = 500;
 let messsage: string = `The product ${product} is priced at ${price} dollars.`;
+
+
+// .................................
+// functions
+// 1.palindrome
+const ispalindrome=(palin:string):boolean=>{
+  let myPlain=palin.split("").reverse().join("");
+  return myPlain===palin
+}
+console.log(ispalindrome("12321"))

@@ -28,3 +28,11 @@ let areEqual = str1 === str2;
 let product = "Phone";
 let price = 500;
 let messsage = `The product ${product} is priced at ${price} dollars.`;
+// .................................
+// functions
+// 1.palindrome
+const ispalindrome = (palin) => {
+    let myPlain = palin.split("").reverse().join("");
+    return myPlain === palin;
+};
+console.log(ispalindrome("12321"));
