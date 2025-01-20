@@ -6,3 +6,4 @@
 // using the array. of method
 const names = Array.of("somya", "gupta");
 console.log(names[1]);
+console.log(names.length);

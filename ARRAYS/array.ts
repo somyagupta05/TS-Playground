@@ -10,3 +10,4 @@
 const names:string[]=Array.of("somya","gupta")
 
 console.log(names[1])
+console.log(names.length)
