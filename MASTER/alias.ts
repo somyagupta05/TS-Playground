@@ -3,6 +3,7 @@ type Person={
   name:string,
   age:number,
   isStudent:boolean,
+  class?:string, //option parameter
   address:{city:string;country:string}
 }
 
