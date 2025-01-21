@@ -1,5 +1,5 @@
-//* Practice questions for map:
-//? 1: Given an array of strings representing names, create a new array that contains the uppercase version of each name.
+// Practice questions for map:
+// 1: Given an array of strings representing names, create a new array that contains the uppercase version of each name.
 let stringArray:string[] = ["Alice", "Bob", "Anna", "Andrew", "Alex"];
 
 let uppercaseArray = stringArray.map((name) => name.toUpperCase());
