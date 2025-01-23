@@ -11,7 +11,15 @@ const student1: Student = {
   name: "somya",
   age: 22,
   greet: function(country: string): string {
-    return `welcome my name is ${this.name}, I am ${this.age} yrs old & I am from ${country}`;
+    return `welcome my name is ${student1.name}, I am ${student1.age} yrs old & I am from ${country}`;
+  }
+}
+
+const student2: Student = {
+  name: "gupta",
+  age: 22,
+  greet: function(country: string): string {
+    return `welcome my name is ${student2.name}, I am ${student2.age} yrs old & I am from ${country}`;
   }
 }
 
@@ -20,5 +28,9 @@ const introduction = (student1: Student): string => {
   return `welcome my name is ${name}, I am ${age} yrs old`;
 }
 
-console.log(introduction(student1));
-console.log(student1.greet("India")); // Example of calling the greet method
+// console.log(introduction(student1));
+// console.log(introduction(student2));
+
+console.log(student1.greet("India")); 
+console.log(student2.greet("India"));
+// Example of calling the greet method
