@@ -1,0 +1,1 @@
+// Enum in typescript are commonly used when you want to represent a set of related values and choose one value from multiple options. Enums provide a convenient way to define a set of named values and associate them with specific meanings.
