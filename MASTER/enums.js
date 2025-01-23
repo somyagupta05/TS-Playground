@@ -17,7 +17,7 @@ const user2 = {
     role: Roles.user
 };
 const isAdmin = (user) => {
-    const { name = "User", role } = user; // Default name to "User" if not provided
+    const { name = "User", role } = user;
     return role === Roles.admin
         ? `${name} is allowed to edit the website`
         : `${name} is not allowed to edit the website`;
