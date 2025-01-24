@@ -13,6 +13,7 @@
 // console.log(stringResult);
 
 
+// T is typescript here you can also write Type or also you can write anything but it should be same everywhere instead of T
 function logAndReturn<T>(value:T):T{
     
     return value;
