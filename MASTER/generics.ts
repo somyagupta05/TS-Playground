@@ -11,3 +11,17 @@
 
 // console.log(numberResult);
 // console.log(stringResult);
+
+
+function logAndReturn<T>(value:T):T{
+    
+    return value;
+  }
+
+  const numberResult:42 =logAndReturn(42);
+  const stringResult:"hello, generics" =logAndReturn("hello, generics");
+  const booleanResult:true=logAndReturn(true)
+  
+  console.log(numberResult);
+  console.log(stringResult);
+  console.log(booleanResult);
