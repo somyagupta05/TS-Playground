@@ -9,7 +9,7 @@
 // const booleanResult:string | number=logAndReturn(true)
 // console.log(numberResult);
 // console.log(stringResult);
-// T is typescript here you can also write Type
+// T is typescript here you can also write Type or also you can write anything but it should be same everywhere instead of T
 function logAndReturn(value) {
     return value;
 }
