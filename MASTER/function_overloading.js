@@ -17,4 +17,4 @@ function add(a, b) {
     console.log(typeof b);
 }
 const result1 = add(5, "somya");
-const result2 = add("hello", "world");
+const result2 = add("hello", 5);

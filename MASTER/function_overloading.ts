@@ -18,4 +18,4 @@ function add<T,U>(a:T,b:U):void{
   console.log(typeof b);
   }
   const result1:void=add<number,string>(5,"somya")
-  const result2:void=add("hello","world")
+  const result2:void=add("hello",5)
