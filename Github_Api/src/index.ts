@@ -12,7 +12,16 @@ interface UserData{
 
 
 // reusable fun
-function myCustomeFetcher(url:string,options?:RequestInit):Promise<T> {}
+async function myCustomeFetcher(url:string,options?:RequestInit):Promise<T> {
+  const response=await fetch(url,options);
+  if(!response.ok){
+    throw new Error(
+      `Netwotk response was not ok -status: ${response.status}`
+    )
+  }
+  const data=response.json()
+  return data;
+}
 function fetchUserData(url:string){
   myCustomeFetcher<UserData[]>(url,{});
 }
