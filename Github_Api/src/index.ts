@@ -61,7 +61,10 @@ formSubmit.addEventListener('submit',async(e)=>{
     const url="https://api.github.com/users";
     const allUserDta=await myCustomeFetcher(url,{});
     const matchingUsers=allUserDta.filter((user)=>{
-      return user.login.toLowerCase().include(searchTerm)
-    })
+      return user.login.toLowerCase().includes(searchTerm)
+    });
+  }
+  catch(error){
+    console.log(error)
   }
 })
