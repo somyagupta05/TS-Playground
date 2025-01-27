@@ -39,7 +39,7 @@ button{
   padding: 1rem 2.4rem;
   font-size: 1.6rem;
 }
-.main-container{
+.main_container{
   display: flex;
   flex-wrap: wrap;
   gap: 8rem;
