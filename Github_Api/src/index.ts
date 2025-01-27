@@ -63,6 +63,19 @@ formSubmit.addEventListener('submit',async(e)=>{
     const matchingUsers=allUserDta.filter((user)=>{
       return user.login.toLowerCase().includes(searchTerm)
     });
+    if(matchingUsers.length===0)
+    {
+      main_Container?.insertAdjacentHTML(
+        "beforeend",
+        `<p class="empty-msg"> No Matchig user found </p>`
+      )
+    }
+    else {
+      for (const singleUser of matchingUsers)
+      {
+        showResultUI(singleUser)
+      }
+    }
   }
   catch(error){
     console.log(error)
