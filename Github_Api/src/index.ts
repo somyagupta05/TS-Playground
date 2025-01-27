@@ -50,3 +50,18 @@ function fetchUserData(url: string) {
 
 // Default function call
 fetchUserData("https://api.github.com/users");
+
+// let perform search functionality
+
+formSubmit.addEventListener('submit',async(e)=>{
+  e.preventDefault();
+
+  const searchTerm=getUsername.value.toLowerCase();
+  try{
+    const url="https://api.github.com/users";
+    const allUserDta=await myCustomeFetcher(url,{});
+    const matchingUsers=allUserDta.filter((user)=>{
+      return user.login.toLowerCase().include(searchTerm)
+    })
+  }
+})
