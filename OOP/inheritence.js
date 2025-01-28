@@ -10,7 +10,11 @@ class Person {
         return `Hi, I am ${this.name} and I'm ${this.age} years old. I love ${this.hobbies.join(", ")}.`;
     }
 }
+class Student extends Person {
+}
+class Teachers {
+}
 const person3 = new Person("Somya", 12, ["playing"]);
-const person4 = new Person("Gupta", 12, ["playing", "reading"]);
+const students1 = new Student("Gupta", 12, ["playing", "reading"]);
 console.log(person3.introduce());
-console.log(person4.introduce());
+console.log(students1.introduce());

@@ -5,6 +5,7 @@ class Person {
   age: number;
   hobbies: string[];
 
+
   constructor(name: string, age: number, hobbies: string[]) {
     this.name = name;
     this.age = age;
@@ -16,8 +17,12 @@ class Person {
   }
 }
 
+class Student extends Person{}
+
+class Teachers{}
+
 const person3: Person = new Person("Somya", 12, ["playing"]);
-const person4: Person = new Person("Gupta", 12, ["playing", "reading"]);
+const students1:Student = new Student("Gupta", 12, ["playing", "reading"]);
 
 console.log(person3.introduce());
-console.log(person4.introduce());
+console.log(students1.introduce());
