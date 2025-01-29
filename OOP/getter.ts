@@ -1,0 +1,1 @@
+// In typescript classes, you can use getter and setter methods to control the access and modification of class properties. Getter methods allow you to retrieve the value of property, while setter allow you to set the value of a property with additional logic or validation. 
