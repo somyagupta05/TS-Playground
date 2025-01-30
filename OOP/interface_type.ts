@@ -2,23 +2,45 @@
 // use interfaces when defining object shapes or classes that adhere to a contract.
 
 // interfaces can extend other interfaces to inherit their members.
-// custom types can use sunions and intersections for more complex type compositions.
+// custom types can use unions and intersections for more complex type compositions.
 
-type Stud={
+// type Stud={
+//   name:string;
+//   age:number;
+// };
+// type StudAddr={
+//   city:string;
+//   state:string;
+// };
+
+// type Data=Stud | StudAddr;
+
+// const bioData:Stud | StudAddr ={
+//   name:"somya",
+//   city:"pune",
+//   state:"mp"
+// }
+
+// console.log(bioData)
+
+
+
+interface Stud {
   name:string;
   age:number;
 };
-type StudAddr={
+interface StudAddr {
   city:string;
   state:string;
 };
 
-type Data=Stud | StudAddr;
+interface Data extends Stud , StudAddr {}
 
-const bioData:Stud | StudAddr ={
+const bioData:Data= {
   name:"somya",
   city:"pune",
-  state:"mp"
+  state:"mp",
+  age:22,
 }
 
 console.log(bioData)
