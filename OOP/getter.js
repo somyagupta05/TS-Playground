@@ -1,5 +1,6 @@
 "use strict";
 // In typescript classes, you can use getter and setter methods to control the access and modification of class properties. Getter methods allow you to retrieve the value of property, while setter allow you to set the value of a property with additional logic or validation. 
+// get method doesn't take perameter but set method takes only one parameter.
 class Personss1 {
     constructor(name, hobbies) {
         this.name = name;
@@ -22,5 +23,5 @@ class Personss1 {
     }
 }
 const person30 = new Personss1("Somya", ["playing"]);
-person30.age = 526;
+person30.age = 56;
 console.log(person30.introduce());
