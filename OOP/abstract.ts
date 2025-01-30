@@ -24,4 +24,4 @@ class Circle extends Shape{
 
 const circle =new Circle("Red",5);
 console.log(circle.calculateArea());
-circle.displayArea;
+circle.displayArea();
