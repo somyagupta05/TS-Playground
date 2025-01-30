@@ -1,0 +1,8 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore package-lock.json (optional, if you don't want to track it)
+package-lock.json
+
+# Ignore yarn.lock (optional, if you are using Yarn and don't want to track it)
+yarn.lock
