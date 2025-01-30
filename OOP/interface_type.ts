@@ -36,11 +36,21 @@ interface StudAddr {
 
 interface Data extends Stud , StudAddr {}
 
-const bioData:Data= {
-  name:"somya",
-  city:"pune",
-  state:"mp",
-  age:22,
+// const bioData:Data= {
+//   name:"somya",
+//   city:"pune",
+//   state:"mp",
+//   age:22,
+// }
+
+class BioData implements Data{
+  constructor(
+    public name:string,
+    public age:number,
+    public city:string,
+    public state:string,
+  ){}
 }
 
-console.log(bioData)
+const std1=new BioData("somya",23,"pune","mp")
+console.log(std1)
